@@ -1,5 +1,4 @@
 from pytube import YouTube
-import tkinter
 from tkinter import filedialog
 import pdb
 import os
