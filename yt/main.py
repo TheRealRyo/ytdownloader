@@ -3,8 +3,6 @@ import tkinter
 from tkinter import filedialog
 import pdb
 import os
-
-
 import customtkinter
 
 customtkinter.set_appearance_mode("dark")
