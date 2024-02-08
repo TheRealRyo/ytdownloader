@@ -79,7 +79,7 @@ def startDownload():
           
          
 
-          
+#frame 1        
 frame1 = customtkinter.CTkFrame(app,bg_color="#242424",fg_color="#242424")
 frame1.pack(ipady=20, ipadx=20 )
 frame1.rowconfigure((0,1), weight=1)
