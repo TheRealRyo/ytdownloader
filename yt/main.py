@@ -12,7 +12,7 @@ app = customtkinter.CTk()
 app.geometry("720x480")
 app.title("sum")
 
-
+global resolutions
 def openfile():
     global dir
     
@@ -36,7 +36,7 @@ def startDownload():
         ytLink = link.get()
         ytObject = YouTube(ytLink, on_progress_callback=on_progress)
         video = ytObject.streams.get_highest_resolution()
-        global resolutions
+        
         
         resolutions = [stream.resolution for stream in ytObject.streams.filter(progressive=True)]
         
@@ -64,7 +64,6 @@ def startDownload():
      
         
     except Exception as e:
-
         if link.get()== "":
             msgerr.configure(text="please enter a link" , text_color="red")
         elif resolutions== "" :
