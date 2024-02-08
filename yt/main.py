@@ -92,7 +92,7 @@ link.grid(row=1,column=0)
 button2 = customtkinter.CTkButton(frame1, text="...", command=openfile, width= 10,height=28 )
 button2.grid(row=1,column=1,padx=8)
 
-
+#frame 2        
 frame2 = customtkinter.CTkFrame(app,bg_color="#242424",fg_color="#242424")
 frame2.place(x=0,y=160, relwidth=1)
 msg = customtkinter.CTkLabel(app, text="")
