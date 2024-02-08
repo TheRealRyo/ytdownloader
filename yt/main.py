@@ -12,7 +12,8 @@ app = customtkinter.CTk()
 app.geometry("720x480")
 app.title("sum")
 
-global resolutions
+resolutions = []
+
 def openfile():
     global dir
     
@@ -32,7 +33,7 @@ def on_progress(stream, chunk, bytes_remaining):
    
 def startDownload():
     try:
-       
+        global resolutions
         ytLink = link.get()
         ytObject = YouTube(ytLink, on_progress_callback=on_progress)
         video = ytObject.streams.get_highest_resolution()
